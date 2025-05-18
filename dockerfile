@@ -1,4 +1,4 @@
-ROM ubuntu:22.04
+FROM ubuntu:22.04
 
 # Avoid interactive prompts during install
 ENV DEBIAN_FRONTEND=noninteractive
