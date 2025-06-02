@@ -15,7 +15,7 @@
             pwd
             env
             terraform plan
-            cd
+            cd ..
             terraform output > newfile.txt
             pwd
             cat newfile.txt
