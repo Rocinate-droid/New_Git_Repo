@@ -16,7 +16,7 @@
             env
             terraform plan
             cd ..
-            terraform output > newfile.txt
+            terraform output > /var/lib/jenkins/workspace/resume-test-run/newfile.txt
             pwd
             cat newfile.txt
                '''
