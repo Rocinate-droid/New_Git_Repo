@@ -7,7 +7,7 @@
     stages {
         stage ("terraform build") {
            steps {
-            withCredentials([string(credentialsId: 'access_key', variable: 'ACCESS_KEY'), string(credentialsId: 'access_key', variable: 'ACCESS_KEY')])
+            withCredentials([string(credentialsId: 'access_key', variable: 'AWS_ACCESS_KEY_ID'), string(credentialsId: 'secret_key', variable: 'AWS_SECRET_ACCESS_KEY')])
              {
             sh '''
             pwd
