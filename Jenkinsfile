@@ -11,10 +11,10 @@
              {
             sh '''
             pwd
-            cd master_template; terraform init; terraform plan
-            pwd
-            env
+            cd master_template 
+            terraform init
             terraform plan
+            terraform apply --auto-approve
             terraform output
             cd ..
             terraform output > /var/lib/jenkins/workspace/resume-test-run/newfile.txt
