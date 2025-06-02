@@ -1,8 +1,8 @@
 #!/bin/bash
-pwd
+cd master-template
 terraform init
 terraform plan
 terraform apply --auto-approve
-terraform output > /var/lib/jenkins/workspace/resume-test-run/newfile.txt
+terraform output > ../newfile.txt
 cd ..
 cat newfile.txt
