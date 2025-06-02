@@ -7,6 +7,8 @@
             sh '''
             pwd
             cd master_template; terraform init
+            pwd
+            env
             terraform plan
             cd
             terraform output > newfile.txt
