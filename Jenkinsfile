@@ -1,6 +1,6 @@
  pipeline {
     agent any
-    enviornment {
+    environment {
                   ACCESS_KEY= 'access_key'
                   SECRET_KEY = 'secret_key'
                 }
