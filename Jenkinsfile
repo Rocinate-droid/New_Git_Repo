@@ -6,8 +6,8 @@
 
             sh '''
             cd master_template; terraform init
-            cd master_template; terraform apply --auto-approve
-            cd master_template; terraform output > newfile.txt
+            master_template; terraform apply --auto-approve
+            master_template; terraform output > newfile.txt
                '''
         }
     }
