@@ -11,7 +11,7 @@
              {
             sh '''
             pwd
-            cd master_template; terraform init
+            cd master_template; terraform init; terraform plan
             pwd
             env
             terraform plan
