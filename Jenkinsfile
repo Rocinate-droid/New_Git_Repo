@@ -7,7 +7,7 @@
             sh '''
             pwd
             cd master_template; terraform init
-            terraform apply --auto-approve
+            terraform plan
             cd
             terraform output > newfile.txt
                '''
