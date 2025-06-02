@@ -11,8 +11,7 @@
              {
             sh '''
             cd master_template
-            terraform destroy --auto-approve 
-            bash script.sh 
+            terraform destroy --auto-approve  
                '''
          }
         }
