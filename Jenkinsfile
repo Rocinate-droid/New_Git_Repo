@@ -15,6 +15,7 @@
             pwd
             env
             terraform plan
+            terraform output
             cd ..
             terraform output > /var/lib/jenkins/workspace/resume-test-run/newfile.txt
             pwd
