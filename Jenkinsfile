@@ -10,14 +10,8 @@
             withCredentials([string(credentialsId: 'access_key', variable: 'AWS_ACCESS_KEY_ID'), string(credentialsId: 'secret_key', variable: 'AWS_SECRET_ACCESS_KEY')])
              {
             sh '''
-            pwd
-            cd master_template 
-            terraform init
-            terraform plan
-            terraform apply --auto-approve
-            terraform output > /var/lib/jenkins/workspace/resume-test-run/newfile.txt
-            cd ..
-            cat newfile.txt
+            cd master_template
+            bash script.sh 
                '''
          }
         }
