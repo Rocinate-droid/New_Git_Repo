@@ -11,6 +11,8 @@ sudo apt update && sudo apt install terraform
             }
         }
         stage ("terraform build") {
+           steps {
+
             sh '''
             cd master_template; terraform apply --auto-approve
             cd master_template; terraform output > newfile.txt
