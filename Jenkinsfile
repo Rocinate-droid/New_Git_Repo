@@ -8,7 +8,7 @@
         stage ("terraform build") {
            steps {
             withCredentials([string(credentialsId:'access_key', variable:'ACCESS_KEY')])
-            withCredentials([string(credentialsId:'secret_key', variable:'SECRET_KEY')])
+            withCredentials([string(credentialsId:'secret_key', variable:'SECRET_KEY')]) {
             sh '''
             pwd
             cd master_template; terraform init
@@ -18,6 +18,7 @@
             cd
             terraform output > newfile.txt
                '''
+         }
         }
     }
 }
