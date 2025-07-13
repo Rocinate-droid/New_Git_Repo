@@ -1,2 +1,2 @@
 !#/bin/bash
-echo "Hello world" >> newfile.txt
+echo "Hello there" >> newfile.txt
